@@ -41,75 +41,159 @@
 
 <!-- CONTINUT -->
 
-<section class="lesson-container">
+<section class="lesson-layout">
 
-    <!-- card teorie -->
+    <!-- SIDEBAR -->
 
-    <div class="lesson-card">
+    <aside class="sidebar">
 
-        <h2>Ce este un subprogram?</h2>
+        <h3>Lecții</h3>
 
-        <p>
-            Un subprogram reprezintă o secvență de instrucțiuni
-            care realizează o anumită sarcină.
-        </p>
+        <a href="#">Ce este un subprogram</a>
+        <a href="#">Declararea funcțiilor</a>
+        <a href="#">Parametri</a>
+        <a href="#">Return</a>
+        <a href="#">Exemple</a>
+        <a href="#">Exerciții</a>
 
-        <p>
-            În C++, subprogramele sunt numite funcții.
-        </p>
+    </aside>
 
-    </div>
+    <!-- CONTINUT -->
 
-    <!-- cod -->
+    <div class="lesson-container">
 
-    <div class="lesson-card">
+        <!-- definitie -->
 
-        <h2>Exemplu simplu</h2>
+        <div class="lesson-card">
+
+            <h2>Ce este un subprogram?</h2>
+
+            <p>
+                Un subprogram reprezintă o secvență de instrucțiuni
+                care realizează o anumită operație.
+            </p>
+
+            <p>
+                Avantajele utilizării subprogramelor:
+            </p>
+
+            <ul class="theory-list">
+
+                <li>cod mai organizat;</li>
+                <li>evitarea repetiției;</li>
+                <li>program mai ușor de înțeles;</li>
+                <li>depanare mai simplă.</li>
+
+            </ul>
+
+        </div>
+
+        <!-- important -->
+
+        <div class="important-box">
+
+            <h3>Important</h3>
+
+            <p>
+                Un subprogram trebuie apelat pentru a fi executat.
+            </p>
+
+        </div>
+
+        <!-- cod -->
+
+        <div class="lesson-card">
+
+            <h2>Exemplu de funcție</h2>
 
 <pre><code>
 #include &lt;iostream&gt;
 using namespace std;
 
-void salut()
+void mesaj()
 {
-    cout &lt;&lt; "Salut!";
+    cout &lt;&lt; "Invatam subprograme!";
 }
 
 int main()
 {
-    salut();
+    mesaj();
 
     return 0;
 }
 </code></pre>
 
-    </div>
+        </div>
 
-    <!-- explicatie -->
+        <!-- explicatie -->
 
-    <div class="lesson-card">
+        <div class="lesson-card">
 
-        <h2>Cum funcționează?</h2>
+            <h2>Explicația codului</h2>
 
-        <ul class="theory-list">
+            <ul class="theory-list">
 
-            <li>
-                <strong>void</strong> → funcția nu returnează nimic
-            </li>
+                <li>
+                    <strong>void</strong> →
+                    funcția nu returnează valori.
+                </li>
 
-            <li>
-                <strong>salut()</strong> → numele funcției
-            </li>
+                <li>
+                    <strong>mesaj()</strong> →
+                    numele funcției.
+                </li>
 
-            <li>
-                <strong>cout</strong> → afișează textul
-            </li>
+                <li>
+                    <strong>main()</strong> →
+                    funcția principală.
+                </li>
 
-            <li>
-                Funcția este apelată în <strong>main()</strong>
-            </li>
+                <li>
+                    <strong>mesaj();</strong> →
+                    apelul funcției.
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
+
+        <!-- functie cu return -->
+
+        <div class="lesson-card">
+
+            <h2>Funcție cu return</h2>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int suma(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    cout &lt;&lt; suma(4, 5);
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- exercitiu -->
+
+        <div class="exercise-box">
+
+            <h3>Exercițiu</h3>
+
+            <p>
+                Realizează o funcție care afișează:
+                "C++ este interesant".
+            </p>
+
+        </div>
 
     </div>
 
