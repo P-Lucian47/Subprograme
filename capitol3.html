@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probleme Avansate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">C++ Academy</div>
+
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="capitol1.html">Introducere</a>
+        <a href="capitol2.html">Parametri</a>
+        <a href="capitol3.html">Probleme</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="mini-hero">
+
+    <h1>Probleme și Aplicații</h1>
+
+    <p>
+        Subprogramele sunt esențiale pentru rezolvarea
+        problemelor complexe din informatică.
+    </p>
+
+</section>
+
+<!-- CONTINUT -->
+
+<section class="lesson-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <h3>Capitol</h3>
+
+        <a href="#">Numere prime</a>
+        <a href="#">Cmmdc</a>
+        <a href="#">Palindrom</a>
+        <a href="#">Problema personală</a>
+
+    </aside>
+
+    <!-- CONTINUT -->
+
+    <div class="lesson-container">
+
+        <!-- numere prime -->
+
+        <div class="lesson-card">
+
+            <h2>Verificarea numerelor prime</h2>
+
+            <p>
+                Subprogramul verifică dacă un număr este prim.
+            </p>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+bool prim(int n)
+{
+    if(n < 2)
+        return false;
+
+    for(int d = 2; d * d <= n; d++)
+    {
+        if(n % d == 0)
+            return false;
+    }
+
+    return true;
+}
+
+int main()
+{
+    if(prim(17))
+        cout &lt;&lt; "Numar prim";
+    else
+        cout &lt;&lt; "Nu este prim";
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- cmmdc -->
+
+        <div class="lesson-card">
+
+            <h2>Calcularea CMMDC</h2>
+
+            <p>
+                Algoritmul lui Euclid folosind funcții.
+            </p>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int cmmdc(int a, int b)
+{
+    while(b != 0)
+    {
+        int r = a % b;
+
+        a = b;
+        b = r;
+    }
+
+    return a;
+}
+
+int main()
+{
+    cout &lt;&lt; cmmdc(24, 36);
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- explicatie -->
+
+        <div class="important-box">
+
+            <h3>De ce folosim subprograme?</h3>
+
+            <p>
+                Problemele mari sunt mai ușor de rezolvat
+                dacă sunt împărțite în funcții mai mici.
+            </p>
+
+        </div>
+
+        <!-- PROBLEMA TA -->
+
+        <div class="custom-problem">
+
+            <h2>Problema propusă</h2>
+
+            <div class="problem-text">
+
+                <h3>Cerință</h3>
+
+                <p>
+                    AICI vei putea introduce problema ta personală.
+                </p>
+
+                <p>
+                    Exemplu:
+                    Se citește un număr natural n.
+                    Să se afișeze suma cifrelor pare.
+                </p>
+
+            </div>
+
+            <div class="problem-code">
+
+                <h3>Rezolvare C++</h3>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int sumaPare(int n)
+{
+    int s = 0;
+
+    while(n > 0)
+    {
+        int c = n % 10;
+
+        if(c % 2 == 0)
+            s += c;
+
+        n /= 10;
+    }
+
+    return s;
+}
+
+int main()
+{
+    int n;
+
+    cin >> n;
+
+    cout << sumaPare(n);
+
+    return 0;
+}
+</code></pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- navigare -->
+
+<section class="navigation-buttons">
+
+    <a class="nav-btn" href="capitol2.html">
+        ← Capitol anterior
+    </a>
+
+    <a class="nav-btn" href="index.html">
+        Acasă →
+    </a>
+
+</section>
+
+<footer>
+    <p>Subprograme C++ • Probleme avansate</p>
+</footer>
+
+</body>
+</html>
