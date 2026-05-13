@@ -1,63 +1,85 @@
-body {
-    margin: 0;
-    background: linear-gradient(to right, #dfe9f3, #ffffff);
-    font-family: 'Segoe UI', Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="ro">
 
-/* container principal */
-.container {
-    width: 70%;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subprograme C++</title>
 
-/* titlu principal */
-h1 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 40px;
-}
+    <link rel="stylesheet" href="style.css">
 
-/* subtitlu */
-.intro {
-    text-align: center;
-    color: #666;
-    font-size: 18px;
-}
+    <!-- font modern -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
 
-/* titluri capitole */
-h2 {
-    margin-top: 40px;
-    color: #34495e;
-}
+<body>
 
-/* lista capitole */
-ul {
-    list-style: none;
-    padding: 0;
-}
+    <!-- bara sus -->
+    <header>
+        <div class="logo">C++ Academy</div>
 
-/* fiecare capitol */
-li {
-    margin: 10px 0;
-}
+        <nav>
+            <a href="index.html">Acasă</a>
+            <a href="capitol1.html">Introducere</a>
+            <a href="capitol2.html">Structuri</a>
+        </nav>
+    </header>
 
-/* linkuri stil buton */
-a {
-    display: block;
-    padding: 12px;
-    background: #3498db;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
+    <!-- sectiune principala -->
+    <section class="hero">
 
-/* efect hover */
-a:hover {
-    background: #2980b9;
-    transform: scale(1.03);
-}
+        <div class="hero-text">
+
+            <h1>Subprograme în C++</h1>
+
+            <p>
+                Învață funcțiile și subprogramele C++ într-un mod modern,
+                vizual și interactiv.
+            </p>
+
+            <a class="btn" href="capitol1.html">
+                Începe proiectul
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- carduri -->
+    <section class="cards">
+
+        <div class="card">
+            <h2>Teorie clară</h2>
+
+            <p>
+                Explicații simple pentru fiecare noțiune importantă.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Exemple C++</h2>
+
+            <p>
+                Coduri comentate și ușor de înțeles.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Exerciții</h2>
+
+            <p>
+                Probleme și aplicații pentru aprofundare.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>Proiect realizat pentru informatică • Clasa a X-a</p>
+    </footer>
+
+</body>
+
+</html>
