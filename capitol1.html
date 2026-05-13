@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introducere în C++</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">C++ Academy</div>
+
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="capitol1.html">Introducere</a>
+        <a href="capitol2.html">Structuri</a>
+    </nav>
+
+</header>
+
+<!-- HERO MIC -->
+
+<section class="mini-hero">
+
+    <h1>Introducere în Subprograme</h1>
+
+    <p>
+        Învață cum funcționează funcțiile și subprogramele în C++.
+    </p>
+
+</section>
+
+<!-- CONTINUT -->
+
+<section class="lesson-container">
+
+    <!-- card teorie -->
+
+    <div class="lesson-card">
+
+        <h2>Ce este un subprogram?</h2>
+
+        <p>
+            Un subprogram reprezintă o secvență de instrucțiuni
+            care realizează o anumită sarcină.
+        </p>
+
+        <p>
+            În C++, subprogramele sunt numite funcții.
+        </p>
+
+    </div>
+
+    <!-- cod -->
+
+    <div class="lesson-card">
+
+        <h2>Exemplu simplu</h2>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+void salut()
+{
+    cout &lt;&lt; "Salut!";
+}
+
+int main()
+{
+    salut();
+
+    return 0;
+}
+</code></pre>
+
+    </div>
+
+    <!-- explicatie -->
+
+    <div class="lesson-card">
+
+        <h2>Cum funcționează?</h2>
+
+        <ul class="theory-list">
+
+            <li>
+                <strong>void</strong> → funcția nu returnează nimic
+            </li>
+
+            <li>
+                <strong>salut()</strong> → numele funcției
+            </li>
+
+            <li>
+                <strong>cout</strong> → afișează textul
+            </li>
+
+            <li>
+                Funcția este apelată în <strong>main()</strong>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- navigare -->
+
+<section class="navigation-buttons">
+
+    <a class="nav-btn" href="index.html">
+        ← Înapoi
+    </a>
+
+    <a class="nav-btn" href="capitol2.html">
+        Următorul capitol →
+    </a>
+
+</section>
+
+<footer>
+    <p>Subprograme C++ • Proiect educațional</p>
+</footer>
+
+</body>
+</html>
