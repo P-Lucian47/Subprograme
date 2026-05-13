@@ -498,3 +498,54 @@ code{
 .dark-mode footer{
     background:#111;
 }
+
+/* QUIZ */
+
+.quiz-box{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    text-align:center;
+}
+
+.quiz-box h2{
+    margin-bottom:20px;
+    color:#3498db;
+}
+
+.quiz-box p{
+    margin-bottom:20px;
+}
+
+.quiz-box button{
+    margin:10px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    background:#3498db;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.quiz-box button:hover{
+    background:#217dbb;
+    transform:scale(1.05);
+}
+
+#rezultatQuiz{
+    margin-top:20px;
+    font-weight:bold;
+}
