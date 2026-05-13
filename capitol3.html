@@ -163,13 +163,19 @@ int main()
                 <h3>Cerință</h3>
 
                 <p>
-                    AICI vei putea introduce problema ta personală.
+                    Să se scrie o funcție care are ca parametru un număr natural n și 
+                    returnează cel mai mare număr care poate fi obținut mutând, pe rând, 
+                    prima cifră a numărului n și a celor obținute pe parcurs, pe ultima poziție. 
+                    Nu se vor folosi șiruri de caractere și tablouri auxiliare.
                 </p>
 
                 <p>
+                    numele funcției va fi nrmaxim
+                    funcția va avea un parametru reprezentând numărul dat, 
+                    care va fi mai mic decât 1.000.000.000
                     Exemplu:
-                    Se citește un număr natural n.
-                    Să se afișeze suma cifrelor pare.
+                    nrmaxim(n=4273) = 7342 – este cel mai mare număr dintre: 
+                    2734, 7342, 3427, 4273.
                 </p>
 
             </div>
@@ -179,35 +185,51 @@ int main()
                 <h3>Rezolvare C++</h3>
 
 <pre><code>
-#include &lt;iostream&gt;
-using namespace std;
-
-int sumaPare(int n)
+int nrmaxim(long long n)
 {
-    int s = 0;
-
-    while(n > 0)
+    long long copie,nrmax=-1,p=0;
+    
+    copie=n;
+    
+    while(copie!=0)
+    
     {
-        int c = n % 10;
-
-        if(c % 2 == 0)
-            s += c;
-
-        n /= 10;
+        if(p==0)
+    
+            p=1;
+    
+        else
+    
+            p=p*10;
+    
+        copie=copie/10;
+    
     }
+    
+    long long m=0,m1;
+    
+    m=n%p*10+n/p;
+    
+    if(m&gt;nrmax)
+    
+        nrmax=m;
+    m1=m;
+    
+    while(m!=n)
+    
+    {
+        m=0;
+    
+        m=m1%p*10+m1/p;
+    
+        m1=m;
+    
+        if(m1&gt;nrmax)
+    
+            nrmax=m1;
 
-    return s;
-}
-
-int main()
-{
-    int n;
-
-    cin >> n;
-
-    cout << sumaPare(n);
-
-    return 0;
+    }
+    return nrmax;
 }
 </code></pre>
 
