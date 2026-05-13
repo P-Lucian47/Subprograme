@@ -147,3 +147,122 @@ footer{
     padding:30px;
     margin-top:80px;
 }
+
+/* MINI HERO */
+
+.mini-hero{
+    padding:100px 10%;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("images/programmer.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.mini-hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.mini-hero p{
+    font-size:22px;
+}
+
+/* CONTINUT LECTIE */
+
+.lesson-container{
+    width:85%;
+    margin:60px auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+/* CARDURI */
+
+.lesson-card{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.lesson-card:hover{
+    transform:translateY(-5px);
+}
+
+.lesson-card h2{
+    color:#3498db;
+    margin-bottom:20px;
+}
+
+/* COD C++ */
+
+pre{
+    background:#1e1e1e;
+
+    color:#00ff88;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    overflow-x:auto;
+
+    font-size:16px;
+}
+
+code{
+    font-family:Consolas, monospace;
+}
+
+/* LISTA */
+
+.theory-list{
+    padding-left:20px;
+}
+
+.theory-list li{
+    margin:15px 0;
+    line-height:1.7;
+}
+
+/* BUTOANE */
+
+.navigation-buttons{
+    width:85%;
+    margin:50px auto;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.nav-btn{
+    background:#3498db;
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 25px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    background:#217dbb;
+    transform:scale(1.05);
+}
