@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Structuri și Parametri</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">C++ Academy</div>
+
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="capitol1.html">Introducere</a>
+        <a href="capitol2.html">Parametri</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="mini-hero">
+
+    <h1>Funcții cu Parametri</h1>
+
+    <p>
+        Subprogramele devin utile atunci când rezolvăm
+        probleme complexe și repetitive.
+    </p>
+
+</section>
+
+<!-- CONTINUT -->
+
+<section class="lesson-layout">
+
+    <!-- sidebar -->
+
+    <aside class="sidebar">
+
+        <h3>Conținut</h3>
+
+        <a href="#">Parametri</a>
+        <a href="#">Return</a>
+        <a href="#">Funcții matematice</a>
+        <a href="#">Greșeli frecvente</a>
+        <a href="#">Probleme</a>
+
+    </aside>
+
+    <!-- lectie -->
+
+    <div class="lesson-container">
+
+        <!-- parametri -->
+
+        <div class="lesson-card">
+
+            <h2>Funcții cu parametri</h2>
+
+            <p>
+                Parametrii permit transmiterea valorilor
+                către o funcție.
+            </p>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+void afiseaza(int x)
+{
+    cout &lt;&lt; x;
+}
+
+int main()
+{
+    afiseaza(10);
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- explicatie -->
+
+        <div class="lesson-card">
+
+            <h2>Explicație</h2>
+
+            <ul class="theory-list">
+
+                <li>
+                    <strong>int x</strong> este parametrul funcției.
+                </li>
+
+                <li>
+                    Valoarea 10 este transmisă funcției.
+                </li>
+
+                <li>
+                    Funcția afișează valoarea primită.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- return -->
+
+        <div class="lesson-card">
+
+            <h2>Funcții care returnează valori</h2>
+
+            <p>
+                Unele funcții efectuează calcule și întorc rezultatul.
+            </p>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int patrat(int x)
+{
+    return x * x;
+}
+
+int main()
+{
+    cout &lt;&lt; patrat(6);
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- problema complexa -->
+
+        <div class="lesson-card">
+
+            <h2>Exemplu de problemă mai complexă</h2>
+
+            <p>
+                Calcularea sumei cifrelor unui număr folosind subprograme.
+            </p>
+
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int sumaCifre(int n)
+{
+    int s = 0;
+
+    while(n > 0)
+    {
+        s = s + n % 10;
+        n = n / 10;
+    }
+
+    return s;
+}
+
+int main()
+{
+    cout &lt;&lt; sumaCifre(5724);
+
+    return 0;
+}
+</code></pre>
+
+        </div>
+
+        <!-- important -->
+
+        <div class="important-box">
+
+            <h3>Observație</h3>
+
+            <p>
+                Subprogramele sunt foarte utile în problemele
+                care necesită multe calcule repetitive.
+            </p>
+
+        </div>
+
+        <!-- greseli -->
+
+        <div class="lesson-card">
+
+            <h2>Greșeli frecvente</h2>
+
+            <table class="info-table">
+
+                <tr>
+                    <th>Greșeală</th>
+                    <th>Explicație</th>
+                </tr>
+
+                <tr>
+                    <td>Uitarea lui return</td>
+                    <td>
+                        Funcția trebuie să întoarcă o valoare.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Parametri greșiți</td>
+                    <td>
+                        Tipurile trebuie să coincidă.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Neapelarea funcției</td>
+                    <td>
+                        Funcția nu rulează automat.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- exercitii -->
+
+        <div class="exercise-box">
+
+            <h3>Exercițiu propus</h3>
+
+            <p>
+                Realizează o funcție care verifică
+                dacă un număr este palindrom.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- navigare -->
+
+<section class="navigation-buttons">
+
+    <a class="nav-btn" href="capitol1.html">
+        ← Capitolul anterior
+    </a>
+
+    <a class="nav-btn" href="index.html">
+        Acasă →
+    </a>
+
+</section>
+
+<footer>
+    <p>Subprograme C++ • Capitol avansat</p>
+</footer>
+
+</body>
+</html>
