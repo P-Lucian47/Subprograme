@@ -376,3 +376,26 @@ code{
     }
 
 }
+
+/* TABEL */
+
+.info-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.info-table th{
+    background:#3498db;
+    color:white;
+    padding:15px;
+}
+
+.info-table td{
+    padding:15px;
+    border:1px solid #dcdcdc;
+}
+
+.info-table tr:nth-child(even){
+    background:#f4f7fb;
+}
