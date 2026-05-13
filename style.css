@@ -436,3 +436,65 @@ code{
 .problem-code h3{
     margin-bottom:20px;
 }
+
+/* DARK MODE BUTTON */
+
+#darkModeBtn{
+    padding:12px 18px;
+
+    border:none;
+
+    background:#2c3e50;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+#darkModeBtn:hover{
+    background:#34495e;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode header{
+    background:#1f1f1f;
+}
+
+.dark-mode .card,
+.dark-mode .lesson-card,
+.dark-mode .sidebar,
+.dark-mode .custom-problem{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark-mode .sidebar a{
+    background:#2c2c2c;
+    color:white;
+}
+
+.dark-mode .problem-text{
+    background:#2c2c2c;
+}
+
+.dark-mode .important-box{
+    background:#3d3314;
+}
+
+.dark-mode .exercise-box{
+    background:#173b2a;
+}
+
+.dark-mode footer{
+    background:#111;
+}
