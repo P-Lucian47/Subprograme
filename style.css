@@ -560,3 +560,7 @@ code{
 .dark-mode .quiz-box p{
     color:white;
 }
+
+.dark-mode nav a{
+    color:#217dbb;
+}
