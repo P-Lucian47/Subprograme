@@ -396,10 +396,6 @@ code{
     border:1px solid #dcdcdc;
 }
 
-.info-table tr:nth-child(even){
-    background:#f4f7fb;
-}
-
 /* PROBLEMA PERSONALIZATA */
 
 .custom-problem{
